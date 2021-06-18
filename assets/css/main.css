@@ -133,6 +133,27 @@ template {
         top: -10px
     }
 }
+.down .icon {
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    fill: #fff;
+    -webkit-animation: pulse 1.3s infinite;
+    animation: pulse 1.3s infinite
+}
+
+.down .icon:active,
+.down .icon:hover,
+.footer a:active,
+.footer a:hover {
+    color: #4b5664
+}
 
 
 .fa {
@@ -143,6 +164,15 @@ template {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
+
+.fa-chevron-up:before {
+    content: "\f077"
+}
+
+.fa-chevron-down:before {
+    content: "\f078"
+}
+
 .fa-envelope:before {
     content: "\f0e0"
 }
